@@ -18,7 +18,8 @@ function calcular(){
     var resultado = document.getElementById('resultado').innerHTML;
     if(resultado)
     {
-        document.getElementById('resultado').innerHTML = eval(resultado)
+        result = String(eval(resultado)).slice(0, 14)
+        document.getElementById('resultado').innerHTML = result
     } 
     else 
     {
